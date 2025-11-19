@@ -157,13 +157,13 @@ CSI (índice simpático) aumenta → incremento de la actividad simpática.
 
 En conjunto, los valores sugieren que durante el segundo período analizado el sistema nervioso autónomo está más activo, tanto en su componente simpático como parasimpático, lo cual se refleja en una nube de puntos más dispersa en el diagrama.
 
-**Codigo utilizado**
+**Codigo utiliz0**
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
 
-## Función para obtener SD1, SD2, CVI y CSI
+**Función para obtener SD1, SD2, CVI y CSI**
 
 
 def poincare_indices(rr):
@@ -187,7 +187,7 @@ def poincare_indices(rr):
     return rr_n, rr_n1, sd1, sd2, cvi, csi
 
 
-## Calcular índices para cada segmento
+**Calcular índices para cada segmento**
 
 
 rr1_n, rr1_n1, sd1_1, sd2_1, cvi_1, csi_1 = poincare_indices(rr1)
@@ -206,7 +206,7 @@ print("  CVI  =", cvi_2)
 print("  CSI  =", csi_2)
 
 
-## Diagramas de Poincaré para cada segmento
+**Diagramas de Poincaré para cada segmento**
 
 
 plt.figure(figsize=(6,6))
@@ -233,7 +233,7 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
-## Tabla comparativa (para el informe/GitHub)
+**Tabla comparativa (para el informe/GitHub)**
 
 tabla_poincare = pd.DataFrame({
     "Métrica": ["SD1 (s)", "SD2 (s)", "CVI", "CSI"],
