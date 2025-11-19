@@ -143,6 +143,9 @@ En los dos segmentos analizados se observa un conjunto principal de puntos alred
 <img width="590" height="590" alt="17635189358827406964224730213446" src="https://github.com/user-attachments/assets/2a1f699f-c3a1-41ff-9a97-c8a4dff7372c" />
 
 
+
+
+
 SD1 aumenta en el Segmento 2, lo cual refleja mayor fluctuación de corto plazo vinculada a la actividad vagal.
 
 SD2 también incrementa, indicando mayor variabilidad global del ritmo cardiaco.
@@ -155,6 +158,8 @@ CSI (índice simpático) aumenta → incremento de la actividad simpática.
 En conjunto, los valores sugieren que durante el segundo período analizado el sistema nervioso autónomo está más activo, tanto en su componente simpático como parasimpático, lo cual se refleja en una nube de puntos más dispersa en el diagrama.
 
 ## Diagrama de flujo
+
+https://photos.app.goo.gl/7CB1eZY8XPYp2jFE7
 
 
 
