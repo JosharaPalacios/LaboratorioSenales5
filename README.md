@@ -159,7 +159,6 @@ En conjunto, los valores sugieren que durante el segundo período analizado el s
 
 ## Diagrama de flujo
 
-https://photos.app.goo.gl/7CB1eZY8XPYp2jFE7
 
 
 
