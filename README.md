@@ -157,6 +157,83 @@ CSI (índice simpático) aumenta → incremento de la actividad simpática.
 
 En conjunto, los valores sugieren que durante el segundo período analizado el sistema nervioso autónomo está más activo, tanto en su componente simpático como parasimpático, lo cual se refleja en una nube de puntos más dispersa en el diagrama.
 
+**Codigo utilizado**
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# ============================================
+# Función para obtener SD1, SD2, CVI y CSI
+# ============================================
+
+def poincare_indices(rr):
+    rr = np.asarray(rr)
+
+    # Puntos para el diagrama (RR_n, RR_{n+1})
+    rr_n = rr[:-1]
+    rr_n1 = rr[1:]
+
+    # Diferencias sucesivas
+    diff_rr = rr_n1 - rr_n
+
+    # SD1 y SD2 según definiciones estándar
+    sd1 = np.sqrt(0.5) * np.std(diff_rr, ddof=1)            # corto plazo (vagal)
+    sd2 = np.sqrt(2 * np.std(rr, ddof=1)**2 - 0.5 * np.std(diff_rr, ddof=1)**2)  # largo plazo
+
+    # Índices de actividad autonómica
+    cvi = np.log10(sd1 * sd2)      # Cardiac Vagal Index
+    csi = sd2 / sd1                # Cardiac Sympathetic Index
+
+    return rr_n, rr_n1, sd1, sd2, cvi, csi
+
+# ============================================
+# Calcular índices para cada segmento
+# ============================================
+
+rr1_n, rr1_n1, sd1_1, sd2_1, cvi_1, csi_1 = poincare_indices(rr1)
+rr2_n, rr2_n1, sd1_2, sd2_2, cvi_2, csi_2 = poincare_indices(rr2)
+
+# ============================================
+# Diagramas de Poincaré para cada segmento
+# ============================================
+
+plt.figure(figsize=(6,6))
+plt.scatter(rr1_n, rr1_n1, alpha=0.6)
+plt.plot([min(rr1), max(rr1)], [min(rr1), max(rr1)], 'r--', label='y = x')
+plt.xlabel("RRₙ (s)")
+plt.ylabel("RRₙ₊₁ (s)")
+plt.title("Diagrama de Poincaré - Segmento 1 (0–2 min)")
+plt.grid(True)
+plt.axis('equal')
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+plt.figure(figsize=(6,6))
+plt.scatter(rr2_n, rr2_n1, alpha=0.6)
+plt.plot([min(rr2), max(rr2)], [min(rr2), max(rr2)], 'r--', label='y = x')
+plt.xlabel("RRₙ (s)")
+plt.ylabel("RRₙ₊₁ (s)")
+plt.title("Diagrama de Poincaré - Segmento 2 (2–4 min)")
+plt.grid(True)
+plt.axis('equal')
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+# ============================================
+# Tabla comparativa para reporte
+# ============================================
+
+tabla_poincare = pd.DataFrame({
+    "Métrica": ["SD1 (s)", "SD2 (s)", "CVI", "CSI"],
+    "Segmento 1 (0–2 min)": [sd1_1, sd2_1, cvi_1, csi_1],
+    "Segmento 2 (2–4 min)": [sd1_2, sd2_2, cvi_2, csi_2]
+})
+
+print(tabla_poincare)
+
+
 ## Diagrama de flujo
 
 
