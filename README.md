@@ -157,7 +157,9 @@ CSI (índice simpático) aumenta → incremento de la actividad simpática.
 
 En conjunto, los valores sugieren que durante el segundo período analizado el sistema nervioso autónomo está más activo, tanto en su componente simpático como parasimpático, lo cual se refleja en una nube de puntos más dispersa en el diagrama.
 
-**Codigo utiliz0**
+**Codigo utilizo**
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
