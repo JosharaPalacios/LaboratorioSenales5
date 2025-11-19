@@ -98,3 +98,13 @@ El participante leyó un fragmento de texto seleccionado, con el fin de inducir 
 
 La frecuencia de muestreo de 1000 Hz garantiza una resolución temporal suficiente para detectar los picos R con precisión y permite el análisis de HRV sin distorsiones.
 <img width="1621" height="456" alt="image" src="https://github.com/user-attachments/assets/a035e0dc-409a-418f-bce1-0c9f6dd8754f" />
+
+## PARTE C
+**e.Construcción del diagrama de Poincaré**
+
+Para cada tramo de 2 minutos de la señal ECG se generó el diagrama de Poincaré, el cual se construye representando los intervalos  en el eje horizontal y los intervalos  en el eje vertical. Esta gráfica permite evaluar la variabilidad del ritmo cardiaco y distinguir componentes del sistema nervioso autónomo:
+
+SD1, asociado a variabilidad de corto plazo (actividad vagal),
+
+SD2, relacionado con la variabilidad de largo plazo (componente simpático + vagal).
+
