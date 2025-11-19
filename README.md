@@ -108,3 +108,38 @@ SD1, asociado a variabilidad de corto plazo (actividad vagal),
 
 SD2, relacionado con la variabilidad de largo plazo (componente simpático + vagal).
 
+
+**Comparación de la dispersión entre segmentos**
+
+Segmento 1 (0–2 min):
+  SD1  = 0.04678571245372775 s
+  SD2  = 0.07732998998284517 s
+  CVI  = -2.441538798771597
+  CSI  = 1.6528548124457114
+
+Segmento 2 (2–4 min):
+  SD1  = 0.06144787404210659 s
+  SD2  = 0.11152520584667719 s
+  CVI  = -2.1641201046178127
+  CSI  = 1.8149562956442655
+  
+
+En los dos segmentos analizados se observa un conjunto principal de puntos alrededor de valores entre 0.60 y 0.70 segundos. Sin embargo, el Segmento 2 (2–4 min) presenta una dispersión ligeramente mayor, lo que indica un aumento tanto de la variabilidad rápida como de la lenta. Esto coincide con los valores de SD1 y SD2, los cuales aumentan respecto al Segmento 1.
+
+**Interpretación de los resultados**
+
+SD1 aumenta en el Segmento 2, lo cual refleja mayor fluctuación de corto plazo vinculada a la actividad vagal.
+
+SD2 también incrementa, indicando mayor variabilidad global del ritmo cardiaco.
+
+CVI (índice vagal) se vuelve menos negativo → leve incremento de actividad parasimpática.
+
+CSI (índice simpático) aumenta → incremento de la actividad simpática.
+
+
+En conjunto, los valores sugieren que durante el segundo período analizado el sistema nervioso autónomo está más activo, tanto en su componente simpático como parasimpático, lo cual se refleja en una nube de puntos más dispersa en el diagrama.
+
+
+
+
+
