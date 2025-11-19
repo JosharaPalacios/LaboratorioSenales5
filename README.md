@@ -162,9 +162,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# ============================================
-# Función para obtener SD1, SD2, CVI y CSI
-# ============================================
+
+## Función para obtener SD1, SD2, CVI y CSI
+
 
 def poincare_indices(rr):
     rr = np.asarray(rr)
@@ -186,16 +186,28 @@ def poincare_indices(rr):
 
     return rr_n, rr_n1, sd1, sd2, cvi, csi
 
-# ============================================
-# Calcular índices para cada segmento
-# ============================================
+
+## Calcular índices para cada segmento
+
 
 rr1_n, rr1_n1, sd1_1, sd2_1, cvi_1, csi_1 = poincare_indices(rr1)
 rr2_n, rr2_n1, sd1_2, sd2_2, cvi_2, csi_2 = poincare_indices(rr2)
 
-# ============================================
-# Diagramas de Poincaré para cada segmento
-# ============================================
+print("Segmento 1 (0–2 min):")
+print("  SD1  =", sd1_1, "s")
+print("  SD2  =", sd2_1, "s")
+print("  CVI  =", cvi_1)
+print("  CSI  =", csi_1)
+
+print("\nSegmento 2 (2–4 min):")
+print("  SD1  =", sd1_2, "s")
+print("  SD2  =", sd2_2, "s")
+print("  CVI  =", cvi_2)
+print("  CSI  =", csi_2)
+
+
+## Diagramas de Poincaré para cada segmento
+
 
 plt.figure(figsize=(6,6))
 plt.scatter(rr1_n, rr1_n1, alpha=0.6)
@@ -221,9 +233,7 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
-# ============================================
-# Tabla comparativa para reporte
-# ============================================
+## Tabla comparativa (para el informe/GitHub)
 
 tabla_poincare = pd.DataFrame({
     "Métrica": ["SD1 (s)", "SD2 (s)", "CVI", "CSI"],
@@ -231,7 +241,9 @@ tabla_poincare = pd.DataFrame({
     "Segmento 2 (2–4 min)": [sd1_2, sd2_2, cvi_2, csi_2]
 })
 
-print(tabla_poincare)
+tabla_poincare
+
+
 
 
 ## Diagrama de flujo
