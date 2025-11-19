@@ -161,7 +161,9 @@ En conjunto, los valores sugieren que durante el segundo período analizado el s
 
 
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 import pandas as pd
 
 
