@@ -220,6 +220,7 @@ En conjunto, los valores sugieren que durante el segundo período analizado el s
 
 
 ## Diagrama de flujo
+![Imagen de WhatsApp 2025-11-18 a las 21 27 00_814e9610](https://github.com/user-attachments/assets/0df6f1d5-fae9-4bd6-87d7-77bde42fbfbb)
 
 
 
