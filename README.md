@@ -169,6 +169,7 @@ SD1, asociado a variabilidad de corto plazo (actividad vagal),
 
 SD2, relacionado con la variabilidad de largo plazo (componente simpático + vagal).
 
+<img width="382" height="150" alt="image" src="https://github.com/user-attachments/assets/a284ec37-82cc-47d5-aac5-d3a41171b038" />
 
 **Comparación de la dispersión entre segmentos**
 
