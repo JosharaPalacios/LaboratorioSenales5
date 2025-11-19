@@ -111,7 +111,7 @@ SD2, relacionado con la variabilidad de largo plazo (componente simpático + vag
 
 **Comparación de la dispersión entre segmentos**
 
-Segmento 1 (0–2 min):
+**Segmento 1 (0–2 min):**
 
   SD1  = 0.04678571245372775 s
   
@@ -122,7 +122,7 @@ Segmento 1 (0–2 min):
   CSI  = 1.6528548124457114
   
 
-Segmento 2 (2–4 min):
+**Segmento 2 (2–4 min):**
 
   SD1  = 0.06144787404210659 s
   
@@ -138,6 +138,10 @@ En los dos segmentos analizados se observa un conjunto principal de puntos alred
 
 **Interpretación de los resultados**
 
+<img width="590" height="590" alt="17635189634558261947150282215344" src="https://github.com/user-attachments/assets/1706f13a-d8e4-47b6-9e37-bf49d5ac3516" />
+
+<img width="590" height="590" alt="17635189358827406964224730213446" src="https://github.com/user-attachments/assets/2a1f699f-c3a1-41ff-9a97-c8a4dff7372c" />
+
 
 SD1 aumenta en el Segmento 2, lo cual refleja mayor fluctuación de corto plazo vinculada a la actividad vagal.
 
@@ -151,7 +155,7 @@ CSI (índice simpático) aumenta → incremento de la actividad simpática.
 En conjunto, los valores sugieren que durante el segundo período analizado el sistema nervioso autónomo está más activo, tanto en su componente simpático como parasimpático, lo cual se refleja en una nube de puntos más dispersa en el diagrama.
 
 ## Diagrama de flujo
-https://photos.app.goo.gl/tTeYSdKhDqhUtEUCA
+
 
 
 
